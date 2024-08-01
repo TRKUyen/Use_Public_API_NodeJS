@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body class="container">
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+      <div class="jumbotron">
+        <h1>Weather App using NodeJS</h1>
+        <form action="/weather" method="get">
+          <input type="text" name="city" placeholder="Enter city name" />
+          <button type="submit">Get Weather</button>
+        </form>
+      </div>
+      <% if (locals.weather) { %>
+      <div class="card">
+        <!-- Add your weather data here -->
+        <p>
+          <i class="fas fa-thermometer-half"></i>
+          <%=weather.main.temp%>&deg;F
+        </p>
+        <p>
+          <i class="fas fa-cloud"></i>
+          <%=weather.weather[0].main%>
+        </p>
+
+        <p>
+          <i class="fas fa-map-marker-alt"></i>
+          <%=weather.name%>, <%=weather.sys.country%>
+        </p>
+      </div>
+      <% } else { %>
+      <p class="error"><%= error %></p>
+      <% } %>
+    </main>
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>

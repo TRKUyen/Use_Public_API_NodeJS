@@ -9,8 +9,6 @@
 -->
 
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -24,10 +22,10 @@ Using NodeJS || Express || Axios || EJS to create a server call API public weath
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![NodeJS][Node.js]][Nodejs-url]
-* [![EJS][EJS]][EJS-url]
-* [![Express][Express]][Express-url]
-* [![Axios][Axios]][Axios-url]
+* [![Node.js][Node.js]][[Nodejs-url](https://nodejs.org/)]
+* [![EJS][EJS]][[EJS-url](https://ejs.co/)]
+* [![Express.js][Express.js]][[Express-url](https://expressjs.com/)]
+* [![Axios][Axios]][[Axios-url](https://axios-http.com/)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -36,12 +34,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+After cloning project do this to load the web server
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
   npm install npm@latest -g
@@ -49,7 +43,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://openweathermap.org/)
+1. Get a free API Key at [https://openweathermap.org/](https://openweathermap.org/)
 2. Clone the repo
    ```sh
    git clone https://github.com/TRKUyen/Use_Public_API_NodeJS.git
@@ -80,13 +74,6 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 
 

@@ -15,7 +15,7 @@
 ## About The Project
 
 Using NodeJS || Express || Axios || EJS to create a server call API public weather.
-<a herf="https://openweathermap.org/current#builtin" alt="Remember to login take the API key">Link OpenWeather</a>
+<a href="https://openweathermap.org/current#builtin" alt="Remember to login take the API key">Link OpenWeather</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

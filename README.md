@@ -22,10 +22,10 @@ Using NodeJS || Express || Axios || EJS to create a server call API public weath
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Node.js][Node.js]][[Nodejs-url](https://nodejs.org/)]
-* [![EJS][EJS]][[EJS-url](https://ejs.co/)]
-* [![Express.js][Express.js]][[Express-url](https://expressjs.com/)]
-* [![Axios][Axios]][[Axios-url](https://axios-http.com/)]
+* [[Nodejs-url](https://nodejs.org/)]
+* [[EJS-url](https://ejs.co/)]
+* [[Express-url](https://expressjs.com/)]
+* [[Axios-url](https://axios-http.com/)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

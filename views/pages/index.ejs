@@ -7,33 +7,45 @@
     <header><%- include('../partials/header'); %></header>
 
     <main>
-      <div class="jumbotron">
-        <h1>Weather App using NodeJS</h1>
-        <form action="/weather" method="get">
-          <input type="text" name="city" placeholder="Enter city name" />
-          <button type="submit">Get Weather</button>
-        </form>
-      </div>
-      <% if (locals.weather) { %>
-      <div class="card">
-        <!-- Add your weather data here -->
-        <p>
-          <i class="fas fa-thermometer-half"></i>
-          <%=weather.main.temp%>&deg;F
-        </p>
-        <p>
-          <i class="fas fa-cloud"></i>
-          <%=weather.weather[0].main%>
-        </p>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="jumbotron">
+            <h1>Weather App using NodeJS</h1>
+            <form action="/weather" method="get">
+              <input type="text" name="city" placeholder="Enter city name" />
+              <button type="submit">Get Weather</button>
+            </form>
+          </div>
+        </div>
 
-        <p>
-          <i class="fas fa-map-marker-alt"></i>
-          <%=weather.name%>, <%=weather.sys.country%>
-        </p>
+        <div class="col-sm-4">
+          <% if (error) { %>
+          <p class="error"><%= error %></p>
+          <% } else if (locals.weather) { %>
+          <div class="card">
+            <!-- Add your weather data here -->
+            <p>Weather data:</p>
+            <p>
+              <i class="fas fa-thermometer-half"></i>
+              <%=weather.main.temp%>&deg;F
+            </p>
+            <p>
+              <i class="fas fa-cloud"></i>
+              <%=weather.weather[0].main%>
+              <img
+                src="http://openweathermap.org/img/wn/<%=weather.weather[0].icon%>@2x.png"
+                alt="Weather Icon"
+              />
+            </p>
+
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              <%=weather.name%>, <%=weather.sys.country%>
+            </p>
+          </div>
+          <% } %>
+        </div>
       </div>
-      <% } else { %>
-      <p class="error"><%= error %></p>
-      <% } %>
     </main>
     <footer><%- include('../partials/footer'); %></footer>
   </body>

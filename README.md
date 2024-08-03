@@ -56,6 +56,10 @@ After cloning project do this to load the web server
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
+5. Run localhost:3000 in `server.js` open with terminal
+   ```js
+   nodemon server.js
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
